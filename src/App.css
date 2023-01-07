@@ -19,8 +19,23 @@
 }
 .main-class {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row;
+  overflow-x: hidden; */
+  flex-wrap: wrap;
 }
+
+@media only screen and (max-width: 480px) {
+  .main-class {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+  }
+  .class {
+    margin-top: 20px;
+    margin-left: 111 px;
+  }
+}
+
 .class .heading > div {
   padding-left: 10px;
   font-family: 'Tomorrow';
